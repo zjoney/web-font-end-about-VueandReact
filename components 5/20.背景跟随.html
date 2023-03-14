@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="">
+    <title>Document</title>
+    <style>
+        div {
+            /* width: 400px; */
+            height: 2400px;
+            border: 5px solid red;
+            background-image: url("img/logo.jpg");
+            background-repeat: no-repeat;
+            background-position: right 10px bottom 20px;
+            /* background-attachment: fixed; */
+            background-attachment: scroll;
+            /*
+                这个值会影响到背景定位，从基于当前元素，变成基于可视区
+                fixed: 固定在当前可视区的这个位置
+                scroll: 滚动条动，背景也动
+            */
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

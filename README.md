@@ -15,3 +15,9 @@ Font end、Vue / React/Typescript
 - create-react-app
 - 状态通信
 - 构建应用
+
+# 4.component 4
+
+# 5.Html+css
+- 文档
+- 基础知识应用:border/圆角以及附带属性、边框、背景以及图片、字体样式、行高
