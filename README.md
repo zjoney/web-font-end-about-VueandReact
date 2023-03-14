@@ -14,3 +14,4 @@ Font end、Vue / React/Typescript
 - JSX概念
 - create-react-app
 - 状态通信
+- 构建应用
