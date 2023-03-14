@@ -22,5 +22,6 @@ Font end、Vue / React/Typescript
 - 文档
 - 基础知识应用:border/圆角以及附带属性、边框、背景以及图片、字体样式、行高
 
-#  6.vue+ts
+#  6.vue+ts+axious
+# 7 React
 
