@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+    
+    
+        let obj = {
+            x: 1,
+            y: 1,
+            z: 1
+        }
+
+        // function f(source) {
+        //     let _obj = Object.assign({}, source);
+        //     Object.keys(source).forEach((k) => {
+        //         // console.log(k);
+        //         Object.defineProperty(source, k , {
+        //             get() {
+        //                 console.log(`你访问了：${k}`);
+        //                 // return obj.x;
+        //                 return _obj[k];
+        //             }
+        //         })
+        //     })
+            
+        // }
+
+        // f(obj);
+
+        let o = new Proxy(obj, {
+            get() {
+                console.log('代理了');
+            },
+            set() {
+                console.log('代理了');
+            }
+        })
+
+        
+
+        
+
+    </script>
+</body>
+</html>

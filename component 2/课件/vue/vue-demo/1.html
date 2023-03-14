@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="app"></div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+
+        // ReactDOM.createElement(
+        //     <div></div>,
+        //     document.querySelector('#app')
+        // );
+
+        /**
+            jsx + stats => render => html => 挂载（放到，替换）到指定的位置
+        
+            tempate + data => render => html => 挂载（放到，替换）到指定的位置（el）
+        */
+    
+        // 创建一个根组件 - 渲染（模板+数据）
+        new Vue({
+            // 通过 vue 生成的组件内容（编译后的html）挂载的元素
+            el: '#app',
+            // data => state，它一定是一个对象
+            data: {
+                title: '开课吧'
+            },
+            // 组件的模板
+            template: `
+                <div>Vue - {{title}}</div>
+            `
+        });
+
+    </script>
+</body>
+</html>

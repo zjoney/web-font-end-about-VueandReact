@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <div>obj.x的值是：</div>
+    <button>obj.x的值是：</button>
+    <input type="text" value="obj.x的值是：">
+    
+    <script>
+
+        let div = document.querySelector('div');
+        let button = document.querySelector('button');
+        let input = document.querySelector('input');
+    
+        let obj = {
+            x: 1
+        }
+
+        
+        // document.onclick = function() {
+        //     setObj();
+        // }
+
+        // function setObj() {
+
+        //     obj.x++;
+
+            // div.innerHTML = `obj.x的值是：${obj.x}`;
+            // button.innerHTML = `obj.x的值是：${obj.x}`;
+            // input.value = `obj.x的值是：${obj.x}`;
+        // }
+
+        let v = obj.x;
+        Object.defineProperty(obj, 'x', {
+            set(val) {
+                v = val;
+
+                div.innerHTML = `obj.x的值是：${v}`;
+                button.innerHTML = `obj.x的值是：${v}`;
+                input.value = `obj.x的值是：${v}`;
+            },
+            get() {
+                return v;
+            }
+        })
+
+    </script>
+</body>
+</html>
